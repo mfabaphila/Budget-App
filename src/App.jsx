@@ -18,10 +18,11 @@ const balancepercentage = totalExpenses/totalIncome*100
 
 return(
  <div className="budget">
-  <h1>Thee Budget App</h1>
+ 
   
   <fieldset className="income">
-    <legend>Enter Your Incomes</legend>
+    <legend>Thee budget App</legend>
+    <label style={{textDecoration:"underline", color:"brown"}}>Enter Your Incomes</label>
     <label>Salary</label>
 <input 
 type ="number"
@@ -57,7 +58,8 @@ onChange = {(e)=>setSalary(e.target.value)}
   </fieldset>
 
   <fieldset>
-    <legend>Enter Your Expenses</legend>
+    <legend>Thee budget App</legend>
+    <label style={{textDecoration:"underline", color:"brown"}}>Enter Your Expenses</label>
     <label>Rent</label>
     <input
     type ="number"
@@ -90,7 +92,10 @@ onChange = {(e)=>setSalary(e.target.value)}
   onChange={(e) => setElectricity(e.target.value)}
 />
   </fieldset>
+  
   <fieldset className="results">
+    <legend>Thee Budget App</legend>
+    <label style={{textDecoration:"underline", color:"brown"}}>Your Results</label>
     <p>Total Income: R{totalIncome}</p>
     <p>Total Expenses: R{totalExpenses}</p>
     <p> Balance: R{balance}</p>
